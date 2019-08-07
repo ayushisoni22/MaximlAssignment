@@ -7,10 +7,13 @@ public class Substring
 	    String result ="";
 	    
 	    for(int i=0;i<S.length();i++){
-	       if(result.indexOf(S.charAt(i))==-1){
+	      if(S.charAt(i)>='a' && S.charAt(i)<='z'){
+	         if(result.indexOf(S.charAt(i))==-1){
 	           result += S.charAt(i);
-	       }
+	         }
+	      }
 	    }
+		 
 	    System.out.println(result.length());
 	}
 }
